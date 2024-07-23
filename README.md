@@ -1,35 +1,11 @@
-# game-review-generator
+# Easy Compact Steam Review Template
 
-This template should help get you started developing with Vue 3 in Vite.
+Fast way to generate Steam reviews. No ads, no tracking, not even link to this project. 
 
-## Recommended IDE Setup
+Automatically deployed to https://kehet.github.io/Easy-Compact-Steam-Review-Template/
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## License
 
-## Customize configuration
+[MIT License](./LICENSE)
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+Copyright (c) 2024 Kehet
