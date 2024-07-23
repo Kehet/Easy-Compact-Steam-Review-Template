@@ -5,7 +5,7 @@ import QuestionBlock from '@/components/QuestionBlock.vue'
 const topics = [
   {
     title: 'Story',
-    help: "Is the plot engaging and well-constructed?  Are there any moments where the game feels too slow or rushed? Do all plot points and events make sense within the story's world? Are the characters well-developed and multi-dimensional? What are the central themes of the story? How emotionally engaging is the story? How well-written is the dialogue and narration?"
+    help: 'Is the plot engaging and well-constructed?  Are there any moments where the game feels too slow or rushed? Do all plot points and events make sense within the story\'s world? Are the characters well-developed and multi-dimensional? What are the central themes of the story? How emotionally engaging is the story? How well-written is the dialogue and narration?'
   },
   {
     title: 'Gameplay',
@@ -98,7 +98,10 @@ const generateText = () => {
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
         Want to be lazy but hate those checkbox reviews? Well this should generate bit more compact
         review template. I also added some helper questions because I think words are more helpful
-        than few emojis.
+        than few emojis.<br>
+        <a href="https://github.com/Kehet/Easy-Compact-Steam-Review-Template" class="underline text-yellow-500">
+          Fork the project on GitHub.
+        </a>
       </p>
     </div>
 
