@@ -92,7 +92,7 @@ const generateText = () => {
 <template>
   <div class="max-w-3xl mx-auto my-12 text-gray-600 dark:text-gray-400">
     <div class="flex flex-col text-center w-full mb-12">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 dark:text-white">
+      <h1 class="sm:text-4xl text-3xl font-medium title-font mb-4 text-gray-900 dark:text-white">
         Easy Compact Steam Review Template
       </h1>
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
@@ -104,7 +104,7 @@ const generateText = () => {
 
     <div class="flex flex-col gap-y-12">
       <div>
-        <h2 class="grow text-2xl mb-2 text-gray-900 dark:text-white">Summary</h2>
+        <label for="summary" class="grow text-2xl mb-2 text-gray-900 dark:text-white">Summary</label>
 
         <p class="mb-3">
           How enjoyable is the overall gameplay experience? What sets this game apart from others in
@@ -112,6 +112,7 @@ const generateText = () => {
         </p>
 
         <textarea
+          id="summary"
           v-model="summary"
           rows="4"
           class="w-full bg-gray-100 dark:bg-gray-800 bg-opacity-50 rounded border border-gray-300 dark:border-gray-700 focus:border-yellow-500 focus:bg-white dark:focus:bg-gray-900 focus:ring-2 focus:ring-yellow-200 dark:focus:ring-yellow-900 text-base outline-none text-gray-700 dark:text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
@@ -121,6 +122,7 @@ const generateText = () => {
       <QuestionBlock
         v-for="(topic, i) in topics"
         :key="i"
+        :id="`question-${i}`"
         :title="topic.title"
         :help="topic.help"
         v-model:rating="form[i].rating"
@@ -130,7 +132,7 @@ const generateText = () => {
       <div class="p-2 w-full">
         <button
           @click="generateText"
-          class="flex mx-auto text-white dark:text-black bg-yellow-500 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg"
+          class="flex mx-auto text-black bg-yellow-500 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg"
         >
           Copy review
         </button>
