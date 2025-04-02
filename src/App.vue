@@ -38,6 +38,7 @@ const topics = [
 ]
 
 const summary = ref('')
+const copyPasteArea = ref('')
 
 const form = ref([
   { rating: 3, notes: '' },
@@ -78,12 +79,14 @@ const generateText = () => {
 
   console.log(output)
 
+  copyPasteArea.value = output
+
   navigator.clipboard.writeText(output).then(
     () => {
       alert('Review copied to clipboard')
     },
     () => {
-      alert('Failed to copy')
+      alert('Failed to copy to clipboard, text is now in the textarea below')
     }
   )
 }
@@ -140,6 +143,21 @@ const generateText = () => {
           Copy review
         </button>
       </div>
+
+      <div class="p-2 w-full flex flex-col gap-y-3" v-show="copyPasteArea">
+        <label for="copy-paste-area" class="grow text-2xl text-gray-900 dark:text-white">
+          Copy formatted review here
+        </label>
+
+        <textarea
+          id="copy-paste-area"
+          readonly
+          v-model="copyPasteArea"
+          rows="4"
+          class="w-full bg-gray-100 dark:bg-gray-800 bg-opacity-50 rounded border border-gray-300 dark:border-gray-700 focus:border-yellow-500 focus:bg-white dark:focus:bg-gray-900 focus:ring-2 focus:ring-yellow-200 dark:focus:ring-yellow-900 text-base outline-none text-gray-700 dark:text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+        ></textarea>
+      </div>
+
     </div>
   </div>
 </template>

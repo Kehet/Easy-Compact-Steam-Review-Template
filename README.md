@@ -8,4 +8,4 @@ Automatically deployed to https://kehet.github.io/Easy-Compact-Steam-Review-Temp
 
 [MIT License](./LICENSE)
 
-Copyright (c) 2024 Kehet
+Copyright (c) 2025 Kehet
