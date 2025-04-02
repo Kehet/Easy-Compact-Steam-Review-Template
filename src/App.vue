@@ -121,7 +121,7 @@ const generateText = () => {
           id="summary"
           v-model="summary"
           rows="4"
-          class="w-full bg-gray-100 dark:bg-gray-800 bg-opacity-50 rounded border border-gray-300 dark:border-gray-700 focus:border-yellow-500 focus:bg-white dark:focus:bg-gray-900 focus:ring-2 focus:ring-yellow-200 dark:focus:ring-yellow-900 text-base outline-none text-gray-700 dark:text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          class="w-full bg-gray-100 dark:bg-gray-800 bg-opacity-50 rounded-sm border border-gray-300 dark:border-gray-700 focus:border-yellow-500 focus:bg-white dark:focus:bg-gray-900 focus:ring-2 focus:ring-yellow-200 dark:focus:ring-yellow-900 text-base outline-hidden text-gray-700 dark:text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
         ></textarea>
       </div>
 
@@ -138,7 +138,7 @@ const generateText = () => {
       <div class="p-2 w-full">
         <button
           @click="generateText"
-          class="flex mx-auto text-black bg-yellow-500 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg"
+          class="flex mx-auto text-black bg-yellow-500 border-0 py-2 px-8 focus:outline-hidden hover:bg-yellow-600 rounded-sm text-lg"
         >
           Copy review
         </button>
@@ -154,7 +154,7 @@ const generateText = () => {
           readonly
           v-model="copyPasteArea"
           rows="4"
-          class="w-full bg-gray-100 dark:bg-gray-800 bg-opacity-50 rounded border border-gray-300 dark:border-gray-700 focus:border-yellow-500 focus:bg-white dark:focus:bg-gray-900 focus:ring-2 focus:ring-yellow-200 dark:focus:ring-yellow-900 text-base outline-none text-gray-700 dark:text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          class="w-full bg-gray-100 dark:bg-gray-800 bg-opacity-50 rounded-sm border border-gray-300 dark:border-gray-700 focus:border-yellow-500 focus:bg-white dark:focus:bg-gray-900 focus:ring-2 focus:ring-yellow-200 dark:focus:ring-yellow-900 text-base outline-hidden text-gray-700 dark:text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
         ></textarea>
       </div>
 
