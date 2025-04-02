@@ -5,7 +5,7 @@ import QuestionBlock from '@/components/QuestionBlock.vue'
 const topics = [
   {
     title: 'Story',
-    help: 'Is the plot engaging and well-constructed?  Are there any moments where the game feels too slow or rushed? Do all plot points and events make sense within the story\'s world? Are the characters well-developed and multi-dimensional? What are the central themes of the story? How emotionally engaging is the story? How well-written is the dialogue and narration?'
+    help: "Is the plot engaging and well-constructed?  Are there any moments where the game feels too slow or rushed? Do all plot points and events make sense within the story's world? Are the characters well-developed and multi-dimensional? What are the central themes of the story? How emotionally engaging is the story? How well-written is the dialogue and narration?"
   },
   {
     title: 'Gameplay',
@@ -101,8 +101,11 @@ const generateText = () => {
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
         Want to be lazy but hate those checkbox reviews? Well this should generate bit more compact
         review template. I also added some helper questions because I think words are more helpful
-        than few emojis.<br>
-        <a href="https://github.com/Kehet/Easy-Compact-Steam-Review-Template" class="underline text-yellow-500">
+        than few emojis.<br />
+        <a
+          href="https://github.com/Kehet/Easy-Compact-Steam-Review-Template"
+          class="underline text-yellow-500"
+        >
           Fork the project on GitHub.
         </a>
       </p>
@@ -110,7 +113,9 @@ const generateText = () => {
 
     <div class="flex flex-col gap-y-12">
       <div>
-        <label for="summary" class="grow text-2xl mb-2 text-gray-900 dark:text-white">Summary</label>
+        <label for="summary" class="grow text-2xl mb-2 text-gray-900 dark:text-white"
+          >Summary</label
+        >
 
         <p class="mb-3">
           How enjoyable is the overall gameplay experience? What sets this game apart from others in
@@ -157,7 +162,6 @@ const generateText = () => {
           class="w-full bg-gray-100 dark:bg-gray-800 bg-opacity-50 rounded-sm border border-gray-300 dark:border-gray-700 focus:border-yellow-500 focus:bg-white dark:focus:bg-gray-900 focus:ring-2 focus:ring-yellow-200 dark:focus:ring-yellow-900 text-base outline-hidden text-gray-700 dark:text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
         ></textarea>
       </div>
-
     </div>
   </div>
 </template>
